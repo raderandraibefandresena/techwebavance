@@ -1,0 +1,33 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Prend toute la hauteur de la vue */
+}
+
+.main-content {
+  flex: 1; /* Prend l'espace disponible entre le header et le footer */
+  padding: 20px; /* Espacement intérieur pour le contenu */
+}
+
+/* Styles pour le header et le footer (ajustez selon vos besoins) */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}

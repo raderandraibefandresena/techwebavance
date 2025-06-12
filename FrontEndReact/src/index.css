@@ -1,0 +1,10 @@
+/* index.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Prend toute la hauteur de la fenêtre */
+}
+
+#root {
+  height: 100%; /* Prend toute la hauteur de la fenêtre */
+}

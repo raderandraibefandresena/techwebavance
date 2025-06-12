@@ -1,0 +1,290 @@
+.cart-container {
+  padding: 0;
+  font-family: Arial, sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.cart-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Conteneur principal pour les deux sections */
+.cart-layout {
+  display: flex;
+  gap: 40px;
+}
+
+/* Section gauche : Liste des articles du panier */
+.cart-items {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.item-image {
+  width: 160px; 
+  height: 160px; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-h3p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.item-h3p h3 {
+  margin: 0;
+  font-size: 24px; 
+  color: #333;
+  flex: 1;
+}
+
+.item-h3p p {
+  margin: 0;
+  font-size: 20px; 
+  color: #555;
+  min-width: 100px; 
+  text-align: right;
+}
+
+.item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 24px; 
+  color: #333;
+}
+
+.item-details p {
+  margin: 10px 0;
+  font-size: 20px; 
+  color: #555;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.item-quantity button {
+  border: none;
+  padding: 10px 20px; 
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px; 
+}
+
+.item-quantity button:hover {
+  background: #e0e0e0;
+}
+
+.item-quantity span {
+  font-size: 20px; 
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  color: #858282ea;
+  cursor: pointer;
+  font-size: 18px; 
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.remove-button:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+  .cart-item {
+    gap: 10px; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+  }
+
+  .item-image {
+    width: 100px; 
+    height: 100px; 
+  }
+
+  .item-h3p h3 {
+    font-size: 18px; 
+  }
+
+  .item-h3p p {
+    font-size: 16px; 
+    min-width: 80px; 
+  }
+
+  .item-details h3 {
+    font-size: 18px; 
+  }
+
+  .item-details p {
+    font-size: 16px; 
+    margin: 5px 0; 
+  }
+
+  .item-quantity {
+    gap: 10px; 
+    margin-top: 10px; 
+  }
+
+  .item-quantity button {
+    padding: 4px 4px;
+    font-size: 16px; 
+  }
+
+  .item-quantity span {
+    font-size: 16px; 
+  }
+
+  .remove-button {
+    font-size: 16px; 
+  }
+}
+
+/* Style pour la balise <hr /> */
+hr {
+  border: 0;
+  height: 2px; 
+  background: #ddd;
+  margin: 30px 0; 
+  width: 100%;
+}
+
+/* Section droite : Résumé de la commande */
+.summary {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  box-shadow: 10px 10px 20px 20px rgba(250, 250, 250, 0.932);
+  border-radius: 30px;
+  min-height: 300px; 
+  max-height: 500px; 
+  overflow-y: auto; 
+  
+}
+
+.summary h2 {
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.summary-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  color: #555;
+  font-size: 25px;
+}
+
+.summary-details span {
+  font-weight: bold;
+  color: #000;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.total h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.total p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.checkout-button:hover {
+  background: #333;
+}
+
+/* Style pour la balise <hr /> */
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-layout {
+    flex-direction: column;
+  }
+
+  .cart-items {
+    flex: 1;
+  }
+
+  .summary {
+    flex: 1;
+    box-shadow: 10px 10px 20px 20px rgba(250, 250, 250, 0.932);
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-layout {
+    flex-direction: column;
+    gap: 20px; 
+  }
+
+  .summary {
+    order: -1; 
+  }
+
+  .cart-items {
+    order: 1; 
+  }
+}
+
+
+/*modal 
